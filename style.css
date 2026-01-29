@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff6fb;
+  color: #333;
+}
+
+h1, h2 {
+  color: #7a2e5c;
+}
+
+.section {
+  padding: 60px 10%;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #f2b5d4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4a1433;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffe1ef;
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.intro {
+  padding: 80px 10%;
+  background: linear-gradient(to right, #ffd6ea, #ffeef6);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.notice {
+  background-color: #fff;
+  border-left: 6px solid #e06aa3;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.sticky-notice {
+  position: sticky;
+  top: 80px;
+  background-color: #7a2e5c;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.display-box {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffd6ea;
+  border-radius: 10px;
+}
+
+.hidden-box {
+  display: none;
+}
+
+.invisible-box {
+  visibility: hidden;
+}
+
+footer {
+  background-color: #f2b5d4;
+  text-align: center;
+  padding: 20px;
+}
+@media screen and (max-width: 320px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+    
+}
