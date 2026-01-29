@@ -124,10 +124,81 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .section,
+  .intro,
+  .navbar {
+    padding: 40px 5%;
+  }
+
+  .card-container,
+  .gallery-grid {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .section,
+  .intro {
+    padding: 40px 5%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .sticky-notice {
+    top: 120px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .nav-links {
     flex-direction: column;
     gap: 10px;
   }
-    
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }
