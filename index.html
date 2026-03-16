@@ -13,18 +13,20 @@
     <nav class="navbar">
       <div class="logo">🌸 Rosewood University</div>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
-      </button>
+      </label>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#intro">Home</a></li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" id="dropToggle">Campus ▾</a>
-          <ul class="dropdown-menu" id="dropMenu">
+          <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle-checkbox">
+          <label for="dropdown-toggle" class="dropdown-toggle">Campus ▾</label>
+          <ul class="dropdown-menu">
             <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Locations</a></li>
             <li><a href="#announcements">Notices</a></li>
@@ -160,30 +162,5 @@
     </div>
   </footer>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    hamburger.addEventListener('click', function () {
-      navLinks.classList.toggle('open');
-    });
-    // Dropdown touch/click support for mobile
-    const dropToggle = document.getElementById('dropToggle');
-    const dropMenu = document.getElementById('dropMenu');
-    dropToggle.addEventListener('click', function (e) {
-      e.preventDefault();
-      dropMenu.classList.toggle('open');
-    });
-    document.addEventListener('click', function (e) {
-      if (!dropToggle.contains(e.target) && !dropMenu.contains(e.target)) {
-        dropMenu.classList.remove('open');
-      }
-    });
-    // Close nav menu when a link is clicked (mobile)
-    navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        navLinks.classList.remove('open');
-      });
-    });
-  </script>
 </body>
 </html>

@@ -61,6 +61,8 @@ p {
   list-style: none;
   display: flex;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -80,6 +82,12 @@ p {
 
 .dropdown {
   position: relative;
+}
+
+.dropdown-toggle {
+  color: #4a1433;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .dropdown-menu {
@@ -107,8 +115,13 @@ p {
 }
 
 .dropdown:hover .dropdown-menu,
-.dropdown-menu.open {
+.dropdown-toggle-checkbox:checked + .dropdown-toggle + .dropdown-menu {
   display: block;
+}
+
+.nav-toggle,
+.dropdown-toggle-checkbox {
+  display: none;
 }
 
 .intro {
@@ -315,8 +328,13 @@ footer {
     margin-top: 10px;
   }
 
-  .nav-links.open {
+  .nav-toggle:checked ~ .nav-links {
     display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    margin-top: 8px;
   }
 
   .section,
