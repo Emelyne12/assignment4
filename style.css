@@ -54,7 +54,8 @@ h1, h2 {
   border-radius: 8px;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.open {
   display: block;
 }
 
