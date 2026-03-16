@@ -91,6 +91,21 @@ p {
   border-radius: 8px;
 }
 
+.dropdown-menu li {
+  padding: 4px 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f9c8de;
+}
+
 .dropdown:hover .dropdown-menu,
 .dropdown-menu.open {
   display: block;
