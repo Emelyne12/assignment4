@@ -3,10 +3,23 @@ body {
   font-family: "Segoe UI", sans-serif;
   background-color: #fff6fb;
   color: #333;
+  line-height: 1.6;
 }
 
 h1, h2 {
   color: #7a2e5c;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+h2 {
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+}
+
+p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .section {
