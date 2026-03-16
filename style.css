@@ -113,12 +113,13 @@ h1, h2 {
 
 .sticky-notice {
   position: sticky;
-  top: 80px;
+  top: 70px;
   background-color: #7a2e5c;
   color: white;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
+  z-index: 100;
 }
 
 .display-box {
@@ -218,7 +219,8 @@ footer {
   }
 
   .sticky-notice {
-    top: 120px;
+    position: relative;
+    top: auto;
   }
 }
 
