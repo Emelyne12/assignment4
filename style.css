@@ -165,6 +165,28 @@ p {
   visibility: hidden;
 }
 
+.tag-demo {
+  display: inline-block;
+  background-color: #f2b5d4;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 2px;
+}
+
+.mobile-only-note {
+  display: none;
+  background-color: #ffd6ea;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.desktop-only-note {
+  background-color: #d6eaff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
 footer {
   background-color: #f2b5d4;
   text-align: center;

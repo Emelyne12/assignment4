@@ -122,19 +122,30 @@
 
   <section id="display" class="section">
     <h2>Display Behavior Demonstration</h2>
-    <p>This section shows how elements can appear, disappear, or behave differently.</p>
+    <p>This section shows how elements can appear, disappear, or behave differently using CSS display and visibility properties.</p>
 
     <div class="display-box visible-box">
-      I am visible (display: block)
+      <strong>Visible (display: block)</strong> — This element is fully visible and takes up space in the layout.
     </div>
 
     <div class="display-box hidden-box">
-      You cannot see me (display: none)
+      Hidden (display: none) — This text is removed from view and layout.
     </div>
 
     <div class="display-box invisible-box">
-      I take space but I'm invisible (visibility: hidden)
+      <strong>Invisible (visibility: hidden)</strong> — This element takes up space but its content is not visible.
     </div>
+
+    <div class="display-box inline-box">
+      <strong>Inline elements:</strong>
+      <span class="tag-demo">Tag One</span>
+      <span class="tag-demo">Tag Two</span>
+      <span class="tag-demo">Tag Three</span>
+      — these sit side by side (display: inline-block).
+    </div>
+
+    <p class="mobile-only-note">📱 This paragraph is only visible on mobile screens (max-width 480px).</p>
+    <p class="desktop-only-note">🖥️ This paragraph is only visible on desktop screens (min-width 769px).</p>
   </section>
 
   <footer id="footer">
