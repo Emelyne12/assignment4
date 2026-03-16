@@ -300,6 +300,14 @@ footer {
     height: 180px;
   }
 
+  .mobile-only-note {
+    display: block;
+  }
+
+  .desktop-only-note {
+    display: none;
+  }
+
   footer {
     font-size: 0.9rem;
   }
