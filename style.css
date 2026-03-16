@@ -77,6 +77,21 @@ p {
   background: linear-gradient(to right, #ffd6ea, #ffeef6);
 }
 
+.intro-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.intro-list li {
+  background-color: #fff;
+  border-left: 5px solid #e06aa3;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
