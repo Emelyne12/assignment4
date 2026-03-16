@@ -125,6 +125,26 @@ footer {
   padding: 20px;
 }
 
+/* Hamburger button – hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #4a1433;
+  border-radius: 3px;
+}
+
 @media screen and (max-width: 1024px) {
   .section,
   .intro,
